@@ -29,7 +29,7 @@ class PrincipalActivity : AppCompatActivity() {
 
         val btn1 = findViewById<Button>(R.id.btn1)
         btn1.setOnClickListener {
-            startActivity(Intent(this, registroActivity::class.java))
+            startActivity(Intent(this, ActivityServiciosBinding::class.java))
         }
 
         val btn5 = findViewById<Button>(R.id.btn5)
