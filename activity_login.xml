@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".registro.registrarActivity">
+
+    <!-- Imagen principal -->
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="150dp"
+        android:layout_height="141dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/login2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        tools:visibility="visible" />
+
+    <!-- EditText Nombre -->
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/imageView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText Contraseña -->
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón Registrar -->
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:text="Registrar Usuario"
+        app:layout_constraintTop_toBottomOf="@id/txtContraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón Ver Usuarios -->
+    <Button
+        android:id="@+id/btnVerUsuarios"
+        android:layout_width="301dp"
+        android:layout_height="60dp"
+        android:text="Ver usuarios registrados"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Fila de botones de redes sociales -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
